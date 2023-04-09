@@ -32,7 +32,9 @@
           >
           <ul class="header-list list">
             <li class="header-list-item">
-              <a class="header-list-link link" href="./index.html">Studio</a>
+              <a class="header-list-link link active-page" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="header-list-item">
               <a class="header-list-link link" href="./portfolio.html"
@@ -65,7 +67,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button hero-btn">Order Service</button>
+          <button type="button" class="button hero-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- PRINCIPLES OF WORKS -->
@@ -382,13 +386,13 @@
           <a class="logo link" href="./index.html">
             Web <span class="footer-logo">Studio</span></a
           >
-          <p class="footer-description">
+          <p class="footer-text">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
           </p>
         </div>
         <div class="footer-soc-media">
-          <p class="footer-title">Social media</p>
+          <p class="footer-subtitle">Social media</p>
           <ul class="footer-media-list list">
             <li class="footer-media-item">
               <a href="" class="footer-media-link link">
@@ -419,5 +423,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="icon-close-btn" width="8" height="8">
+            <use href="./images/icons.svg#icon-modal-button"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
